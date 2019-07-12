@@ -3,7 +3,6 @@ pipeline {
     stages {
         stage('clone fron git') {
             steps {
-                sh "echo "Stepi 1"" 
                 sh "git clone https://github.com/gdhodi/sample_code.git"
                 sh "mvn clean -f sample_code"
             }
